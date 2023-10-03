@@ -1,0 +1,23 @@
+[2023-10-02T07:30:32.771+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: H8_Automation_Clean.fetching_data manual__2023-10-02T07:30:31.103014+00:00 [queued]>
+[2023-10-02T07:30:32.783+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: H8_Automation_Clean.fetching_data manual__2023-10-02T07:30:31.103014+00:00 [queued]>
+[2023-10-02T07:30:32.785+0000] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2023-10-02T07:30:32.786+0000] {taskinstance.py:1369} INFO - Starting attempt 1 of 1
+[2023-10-02T07:30:32.787+0000] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2023-10-02T07:30:32.805+0000] {taskinstance.py:1389} INFO - Executing <Task(PythonOperator): fetching_data> on 2023-10-02 07:30:31.103014+00:00
+[2023-10-02T07:30:32.814+0000] {standard_task_runner.py:52} INFO - Started process 929 to run task
+[2023-10-02T07:30:32.818+0000] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'H8_Automation_Clean', 'fetching_data', 'manual__2023-10-02T07:30:31.103014+00:00', '--job-id', '29', '--raw', '--subdir', 'DAGS_FOLDER/P2M3_rais_yufli.py', '--cfg-path', '/tmp/tmpibu4v4on', '--error-file', '/tmp/tmpdsn12nka']
+[2023-10-02T07:30:32.821+0000] {standard_task_runner.py:80} INFO - Job 29: Subtask fetching_data
+[2023-10-02T07:30:32.911+0000] {task_command.py:371} INFO - Running <TaskInstance: H8_Automation_Clean.fetching_data manual__2023-10-02T07:30:31.103014+00:00 [running]> on host 5f5d0b98abe4
+[2023-10-02T07:30:33.039+0000] {taskinstance.py:1583} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Rais
+AIRFLOW_CTX_DAG_ID=H8_Automation_Clean
+AIRFLOW_CTX_TASK_ID=fetching_data
+AIRFLOW_CTX_EXECUTION_DATE=2023-10-02T07:30:31.103014+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-10-02T07:30:31.103014+00:00
+[2023-10-02T07:30:33.091+0000] {python.py:173} INFO - Done. Returned value was: None
+[2023-10-02T07:30:33.114+0000] {taskinstance.py:1412} INFO - Marking task as SUCCESS. dag_id=H8_Automation_Clean, task_id=fetching_data, execution_date=20231002T073031, start_date=20231002T073032, end_date=20231002T073033
+[2023-10-02T07:30:33.154+0000] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-10-02T07:30:33.208+0000] {local_task_job.py:279} INFO - 1 downstream tasks scheduled from follow-on schedule check

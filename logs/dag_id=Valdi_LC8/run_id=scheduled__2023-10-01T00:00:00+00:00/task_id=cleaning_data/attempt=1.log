@@ -1,0 +1,54 @@
+[2023-10-02T03:43:10.398+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: Valdi_LC8.cleaning_data scheduled__2023-10-01T00:00:00+00:00 [queued]>
+[2023-10-02T03:43:10.443+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: Valdi_LC8.cleaning_data scheduled__2023-10-01T00:00:00+00:00 [queued]>
+[2023-10-02T03:43:10.445+0000] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2023-10-02T03:43:10.446+0000] {taskinstance.py:1369} INFO - Starting attempt 1 of 2
+[2023-10-02T03:43:10.449+0000] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2023-10-02T03:43:10.499+0000] {taskinstance.py:1389} INFO - Executing <Task(PythonOperator): cleaning_data> on 2023-10-01 00:00:00+00:00
+[2023-10-02T03:43:10.526+0000] {standard_task_runner.py:52} INFO - Started process 231 to run task
+[2023-10-02T03:43:10.550+0000] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'Valdi_LC8', 'cleaning_data', 'scheduled__2023-10-01T00:00:00+00:00', '--job-id', '18', '--raw', '--subdir', 'DAGS_FOLDER/P2G8_Rivaldi_Valensia_DAG.py', '--cfg-path', '/tmp/tmpugeytof0', '--error-file', '/tmp/tmpfypx_r99']
+[2023-10-02T03:43:10.562+0000] {standard_task_runner.py:80} INFO - Job 18: Subtask cleaning_data
+[2023-10-02T03:43:10.946+0000] {task_command.py:371} INFO - Running <TaskInstance: Valdi_LC8.cleaning_data scheduled__2023-10-01T00:00:00+00:00 [running]> on host 5f5d0b98abe4
+[2023-10-02T03:43:11.383+0000] {taskinstance.py:1583} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Valdi
+AIRFLOW_CTX_DAG_ID=Valdi_LC8
+AIRFLOW_CTX_TASK_ID=cleaning_data
+AIRFLOW_CTX_EXECUTION_DATE=2023-10-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-10-01T00:00:00+00:00
+[2023-10-02T03:43:11.386+0000] {taskinstance.py:1902} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+TypeError: cleaning_data() missing 1 required positional argument: 'df'
+[2023-10-02T03:43:11.413+0000] {taskinstance.py:1412} INFO - Marking task as UP_FOR_RETRY. dag_id=Valdi_LC8, task_id=cleaning_data, execution_date=20231001T000000, start_date=20231002T034310, end_date=20231002T034311
+[2023-10-02T03:43:11.466+0000] {standard_task_runner.py:97} ERROR - Failed to execute job 18 for task cleaning_data (cleaning_data() missing 1 required positional argument: 'df'; 231)
+[2023-10-02T03:43:11.543+0000] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-10-02T03:43:11.650+0000] {local_task_job.py:279} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-10-02T03:48:52.400+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: Valdi_LC8.cleaning_data scheduled__2023-10-01T00:00:00+00:00 [queued]>
+[2023-10-02T03:48:52.426+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: Valdi_LC8.cleaning_data scheduled__2023-10-01T00:00:00+00:00 [queued]>
+[2023-10-02T03:48:52.427+0000] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2023-10-02T03:48:52.429+0000] {taskinstance.py:1369} INFO - Starting attempt 1 of 2
+[2023-10-02T03:48:52.430+0000] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2023-10-02T03:48:52.461+0000] {taskinstance.py:1389} INFO - Executing <Task(PythonOperator): cleaning_data> on 2023-10-01 00:00:00+00:00
+[2023-10-02T03:48:52.476+0000] {standard_task_runner.py:52} INFO - Started process 515 to run task
+[2023-10-02T03:48:52.484+0000] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'Valdi_LC8', 'cleaning_data', 'scheduled__2023-10-01T00:00:00+00:00', '--job-id', '20', '--raw', '--subdir', 'DAGS_FOLDER/P2G8_Rivaldi_Valensia_DAG.py', '--cfg-path', '/tmp/tmphgutmq4s', '--error-file', '/tmp/tmp6k9kj6de']
+[2023-10-02T03:48:52.491+0000] {standard_task_runner.py:80} INFO - Job 20: Subtask cleaning_data
+[2023-10-02T03:48:52.727+0000] {task_command.py:371} INFO - Running <TaskInstance: Valdi_LC8.cleaning_data scheduled__2023-10-01T00:00:00+00:00 [running]> on host 5f5d0b98abe4
+[2023-10-02T03:48:52.878+0000] {taskinstance.py:1583} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Valdi
+AIRFLOW_CTX_DAG_ID=Valdi_LC8
+AIRFLOW_CTX_TASK_ID=cleaning_data
+AIRFLOW_CTX_EXECUTION_DATE=2023-10-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-10-01T00:00:00+00:00
+[2023-10-02T03:48:58.210+0000] {logging_mixin.py:115} INFO - -------Data Saved------
+[2023-10-02T03:48:58.254+0000] {python.py:173} INFO - Done. Returned value was: None
+[2023-10-02T03:48:58.290+0000] {taskinstance.py:1412} INFO - Marking task as SUCCESS. dag_id=Valdi_LC8, task_id=cleaning_data, execution_date=20231001T000000, start_date=20231002T034852, end_date=20231002T034858
+[2023-10-02T03:48:58.384+0000] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-10-02T03:48:58.453+0000] {local_task_job.py:279} INFO - 0 downstream tasks scheduled from follow-on schedule check
