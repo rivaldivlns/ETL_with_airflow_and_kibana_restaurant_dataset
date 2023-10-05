@@ -1,15 +1,3 @@
-'''
-=================================================
-Milestone 3
-
-Name: Rivaldi Valensia
-Batch: FTDS-007-HCK
-
-Program ini dibuat untuk melakukan automatisasi transform dan load datamenggunakan PostgreSQL, Airflow dan Visualisasi menggunakan ElasticSearch& Kibana. 
-Adapun dataset yang digunakan adalah dataset mengenai data restaurant.
-=================================================
-'''
-
 import pandas as pd
 import psycopg2 as db
 from elasticsearch import Elasticsearch
