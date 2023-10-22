@@ -1,7 +1,5 @@
 # Data Automation and Visualization with Airflow and ElasticSearch
 
-**Author**: Rivaldi Valensia  
-
 In the realm of data analytics, automation and visualization play a pivotal role in ensuring data-driven insights are readily accessible and actionable. This project, focused on restaurant data, showcases the power of automation using PostgreSQL and Airflow, coupled with visualization capabilities of ElasticSearch & Kibana.
 
 ## Table of Contents:
